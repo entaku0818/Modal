@@ -23,6 +23,18 @@ struct ContentView: View {
                                   icon: "rectangle.portrait.on.rectangle.portrait")
                 }
                 
+                NavigationLink(destination: YouTubeStyleModalView()) {
+                    ModalOptionRow(title: "YouTubeスタイルのモーダル", 
+                                  description: "小さく最小化できる動画アプリ風のモーダル",
+                                  icon: "play.rectangle.fill")
+                }
+                
+                NavigationLink(destination: YouTubeCommentModalView()) {
+                    ModalOptionRow(title: "YouTubeコメントモーダル", 
+                                  description: "背景のコンテンツと相互作用できるボトムシート",
+                                  icon: "text.bubble")
+                }
+                
             }
             .navigationTitle("モーダルサンプル")
         }
