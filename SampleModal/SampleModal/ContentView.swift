@@ -23,11 +23,6 @@ struct ContentView: View {
                                   icon: "rectangle.portrait.on.rectangle.portrait")
                 }
                 
-                NavigationLink(destination: CustomModalDemo()) {
-                    ModalOptionRow(title: "完全に自作するモーダル", 
-                                  description: "addSubviewでそれっぽく見せる実装",
-                                  icon: "rectangle.stack")
-                }
             }
             .navigationTitle("モーダルサンプル")
         }
